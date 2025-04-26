@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TP5: Introduction au Framework Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md"><!--barre de navig en link-->
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">A propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <header class="page-header header container-fluid"><!--Image en fond avec l'overlay + header et description-->
+        <div class="overlay"></div>
+        <div class="description">
+            <h1>Bienvenue chez Deliciouso'Fruito!</h1>
+            <p>Découvrez nos fruits frais et savoureux, cultivés avec passion et récoltés à maturité. Livraison express garantie pour préserver toute leur fraîcheur.</p>
+            <button class="btn btn-outline-secondary btn-lg">Nos produits de saison!</button>
+        </div>
+    </header>
+
+    <!-- Section à trois colonnes -->
+    <div class="container features">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Nos Figues Gourmandes</h3>
+                <img src="column1.jpg" class="img-fluid">
+                <p>Figues violettes et vertes, juteuses et sucrées. Parfaites pour vos desserts ou à déguster nature. <strong>8,90€/kg</strong></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Myrtilles Bio</h3>
+                <img src="column2.jpg" class="img-fluid">
+                <p>Myrtilles cultivées en montagne, gorgées d'antioxydants. Idéales en pâtisserie ou petit-déjeuner. 
+    <strong>6,50€/barquette</strong></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12"> 
+
+                <h3 class="feature-title">Entrer en contact!</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Votre nom" name="">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Courriel" name="email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="4" placeholder="Vos Commentaires" name=""></textarea>
+                </div>
+                <input type="submit" class="btn btn-secondary btn-block" value="Envoyer" name="">
+            </div>
+        </div>
+    </div>
+
+ <!-- lefooter -->
+    <footer class="page-footer">
+ <div class="container">
+ <div class="row">
+ <div class="col-lg-8 col-md-8 col-sm-12">
+ <h6 class="text-uppercase font-weight-bold">Notre Éthique</h6>
+     <p>Nous travaillons avec des producteurs locaux engagés dans une agriculture raisonnée, respectueuse des sols et des saisons. Nos fruits sont cueillis à la main et livrés sous 24h pour garantir fraîcheur et qualité. Nous limitons notre impact écologique grâce à des emballages recyclables et un système de consigne pour nos cageots.</p>
+ </div>
+ <div class="col-lg-4 col-md-4 col-sm-12">
+ <h6 class="text-uppercase font-weight-bold">Contact</h6>
+ <p>
+ 37, quai de Grenelle, 75015 Paris, France <br>
+ info@webDynamique.ece.fr <br>
+ +33 01 02 03 04 05 <br>
+ +33 01 03 02 05 04
+ </p>
+ </div>
+ </div>
+ <div class="footer-copyright text-center">&copy; 2019 Copyright | Droit d'auteur: webDynamique.ece.fr</div>
+</footer>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
